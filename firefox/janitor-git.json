@@ -33,7 +33,8 @@
       "openPort": "8088"
     },
     "Clobber build": "./mach clobber",
-    "Update source code": "git pull --rebase origin master",
+    "Update source code": "git remote update && git rebase mozilla/bookmarks/central && git fetch tags",
+    "Send to code review (MozReview)": "git mozreview push",
     "Send to code review (Phabricator)": "arc diff"
   }
 }
